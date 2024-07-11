@@ -1,20 +1,21 @@
-    <?xml version="1.0" encoding="utf-8"?>
-    <rdf:RDF
-             xmlns:dcterms="http://purl.org/dc/terms/"
-             xmlns:foaf="http://xmlns.com/foaf/0.1/"
-             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-             xmlns:schema="http://schema.org/">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xml:base="https://www.w3.org/People/Berners-Lee/card#">
 
-       <rdf:Description rdf:about="http://example.org/bob#me">
-          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-          <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-07-04</schema:birthDate>
-          <foaf:knows rdf:resource="http://example.org/alice#me"/>
-          <foaf:topic_interest rdf:resource="http://www.wikidata.org/entity/Q12418"/>
-       </rdf:Description>
+  <rdf:Individual rdf:about="https://www.w3.org/People/Berners-Lee/card#i">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:knows rdf:resource="http://dbpedia.org/resource/Alice"/>
+    <foaf:topic_interest rdf:resource="http://www.wikidata.org/entity/Q12418"/>
+    <xsd:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-07-04</xsd:birthDate>
+  </rdf:Individual>
 
-       <rdf:Description rdf:about="http://www.wikidata.org/entity/Q12418">
-          <dcterms:title>Mona Lisa</dcterms:title>
-          <dcterms:creator rdf:resource="http://dbpedia.org/resource/Leonardo_da_Vinci"/>
-       </rdf:Description>
+  <rdf:Individual rdf:about="http://www.wikidata.org/entity/Q12418">
+    <dc:title>Mona Lisa</dc:title>
+    <dc:creator rdf:resource="http://dbpedia.org/resource/Leonardo_da_Vinci"/>
+    <dc:subject rdf:resource="http://data.europeana.eu/item/04802/243FA8618938F4117025F17A8B813C5F9AA4D619"/>
+  </rdf:Individual>
 
-    </rdf:RDF>
+</rdf:RDF>
