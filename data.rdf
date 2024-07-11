@@ -12,10 +12,27 @@
     <xsd:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-07-04</xsd:birthDate>
   </rdf:Individual>
 
+  <rdf:Individual rdf:about="http://dbpedia.org/resource/Alice">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Alice</foaf:name>
+    <foaf:knows rdf:resource="https://www.w3.org/People/Berners-Lee/card#i"/>
+  </rdf:Individual>
+
   <rdf:Individual rdf:about="http://www.wikidata.org/entity/Q12418">
     <dc:title>Mona Lisa</dc:title>
     <dc:creator rdf:resource="http://dbpedia.org/resource/Leonardo_da_Vinci"/>
     <dc:subject rdf:resource="http://data.europeana.eu/item/04802/243FA8618938F4117025F17A8B813C5F9AA4D619"/>
+  </rdf:Individual>
+
+  <rdf:Individual rdf:about="http://dbpedia.org/resource/Leonardo_da_Vinci">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Leonardo da Vinci</foaf:name>
+    <foaf:made rdf:resource="http://www.wikidata.org/entity/Q12418"/>
+  </rdf:Individual>
+
+  <rdf:Individual rdf:about="http://data.europeana.eu/item/04802/243FA8618938F4117025F17A8B813C5F9AA4D619">
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+    <dc:title>Portrait of Mona Lisa</dc:title>
   </rdf:Individual>
 
 </rdf:RDF>
